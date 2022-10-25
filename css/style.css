@@ -329,3 +329,7 @@ main {
 	margin: 0 auto;
 	/* to center it */
 }
+
+.profile_image {
+	max-height: 150px;
+}
