@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<title> "Andreas Kauderer - Portfolio"</title>
+	<link rel="shortcut icon" href="./img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+	<header class="page-header">
+		<!-- Add my logo here-->
+		<img src="./img/Logo_icon.png" class="logo page-header__item" alt="Andreas Kauderer logo">
+		<section class="page-header__item">
+			Andreas Kauderer
+		</section>
+		<nav class="page-header__item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="index.html" role="menuitem" class="navigation-list_item link">Home</a>
+				</li>
+				<li role="presentation">
+					<a href="about.html" role="menuitem" class="navigation-list__item link">About Me</a>
+				</li>
+				<li role="presentation">
+					<a href="contact.html" role="menuitem"
+						class="navigation-list__item navigation-list__item--active link">Contact</a>
+				</li>
+				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list__item link">Work</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div>
+			<h1> Contact Information </h1>
+			<br>
+			<a href=”mailto:andreas.kauderer@protonmail.com role="email-address">andreas.kauderer@protonmail.com</a>
+			<br>
+			<a href="tel:+4367764070483" role="austrianphonenumber">Austrian Phone Number</a>
+			<br>
+			<a href="mailto.andreas.kauderer@protonmail.com">Contact me here</a>
+		</div>
+		<div>
+			<form action="" method="post" id="contact-form">
+				<label class="standard-label" for="contact-email"> *E-mail: </label>
+				<input type="email" id="contact-email" required>
+
+				<label class="standard-label" for="contact-telephone"> Telephone: </label>
+				<input type="tel" id="contact-telephone">
+
+				<label class="standard-label" for="my-input"> Your Message to Me </label>
+				<textarea maxlength="240" id="my-input" required></textarea>
+
+				<input type="submit" value="Send Message" class="button">
+			</form>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<p class="page-footer__item">Find me on</p>
+		<div class="social-media page-footer__item">
+			<img src="img/github_icon.svg" alt="Github Icon">
+			<img src="img/twitter_icon.svg" alt="Twitter Icon">
+			<img src="img/linkedin_icon.svg" alt="LinkedIn Icon">
+		</div>
+	</footer>
+	<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 15px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  color: #2b2b2b;
+}
+
+a {
+  color: #008768;
+  -webkit-transition: .5s opacity;
+  -o-transition: .5s opacity;
+  transition: .5s opacity;
+}
+
+.link {
+  color: #008768;
+  -webkit-transition: .5s opacity;
+  -o-transition: .5s opacity;
+  transition: .5s opacity;
+}
+
+
+a:visited {
+  /*visitied link*/
+  color: #078269;
+}
+
+
+.link:visited {
+  /*visitied link*/
+  color: #078269;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:visited {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  opacity: .5;
+}
+
+a:active .link:active {
+  /* selected link*/
+  color: #0eeabe;
+}
+
+.italic {
+  font-weight: 300;
+  font-style: italic;
+  color: #078269;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #008768;
+  color: #fff;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid #ddd;
+  -webkit-transition: .5s opacity;
+  -o-transition: .5s opacity;
+  transition: .5s opacity;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #008768;
+  color: #fff;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid #ddd;
+  -webkit-transition: .5s opacity;
+  -o-transition: .5s opacity;
+  transition: .5s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand*/
+  cursor: pointer;
+  /* reduce opacity to light up*/
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+.logo {
+  float: left;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.profile {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50px;
+  flex: 0 1 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid__item {
+  background-color: #ddd;
+  text-align: center;
+}
+
+.page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.page-footer__item {
+  text-align: center;
+}
+
+table {
+  padding: 0;
+}
+
+th {
+  max-width: inherit;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  max-width: inherit;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #00876785;
+}
+
+tr:hover {
+  background-color: #00876785;
+}
+
+@media all and (max-width: 450px) {
+  .page-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation: 10s color-change infinite alternate linear;
+  animation: 10s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(500px, 50px);
+    transform: translate(500px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(500px, 50px);
+    transform: translate(500px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-secondary {
+  from {
+    -webkit-transform: translate(800px, 48px);
+    transform: translate(800px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-secondary {
+  from {
+    -webkit-transform: translate(800px, 48px);
+    transform: translate(800px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-rear {
+  -webkit-animation: 50s cloud-move-secondary infinite alternate linear;
+  animation: 50s cloud-move-secondary infinite alternate linear;
+}
+
+@-webkit-keyframes mountain-zoom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+  }
+}
+
+@keyframes mountain-zoom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+  }
+}
+
+.mountain {
+  -webkit-animation: 20s mountain-zoom infinite alternate linear;
+  animation: 20s mountain-zoom infinite alternate linear;
+}
+
+form {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #00876785;
+}
+
+form * {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* to center it */
+}
